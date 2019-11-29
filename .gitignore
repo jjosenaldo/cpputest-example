@@ -1,0 +1,5 @@
+test/gcov
+test/lib
+test/objs
+test/out
+test/out.txt
