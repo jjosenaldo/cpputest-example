@@ -1,5 +1,5 @@
 # auxiliary variables
-PROJECT_DIR=/home/satan/marcel/seminar2
+PROJECT_DIR=/home/satan/repos/cpputest-example
 SRC_DIR=$(PROJECT_DIR)/src
 TEST_DIR=$(PROJECT_DIR)/test
 
