@@ -7,7 +7,7 @@ TEST_DIR=$(PROJECT_DIR)/test
 CPPUTEST_HOME=/home/satan/Downloads/cpputest
 INCLUDE_DIRS=$(SRC_DIR)/calc $(SRC_DIR)/stack $(CPPUTEST_HOME)/include
 SRC_DIRS=$(SRC_DIR)/calc $(SRC_DIR)/stack
-TEST_SRC_DIRS = $(TEST_DIR)
+TEST_SRC_DIRS = $(TEST_DIR) $(TEST_DIR)/calc $(TEST_DIR)/stack
 TEST_TARGET=out
 CPPUTEST_USE_GCOV=Y
 
