@@ -1,4 +1,3 @@
-// t/test.cpp
 #include "CppUTest/TestHarness.h"
 #include "calc.h"
 
