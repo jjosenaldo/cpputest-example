@@ -16,6 +16,6 @@ TEST(TestCalc, testSumUnderflow)
   CHECK_EQUAL(INT_MIN, sum(-10,INT_MIN));
 }
 
-TEST(TestCalc, testSumNoUnderflowOrOverflow){
+TEST(TestCalc, testRegularSum){
     CHECK_EQUAL(10, sum(6,4));
 }
