@@ -2,11 +2,10 @@
 #include "calc.h"
 
 int sum(int a, int b){
+    if(a > 0 && b > INT_MAX - a)
+        return INT_MAX;
+    if(a < 0 && b < INT_MIN - a)
+        return INT_MIN;
+    
     return a+b;
-}
-
-int prod(int a, int b){
-    if(b>0) return a+prod(a,b-1);
-    if(b == 0) return 0;
-    return a*b;
 }

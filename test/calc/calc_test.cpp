@@ -6,12 +6,16 @@ TEST_GROUP(TestCalc)
 {
 };
 
-TEST(TestCalc, testSum)
+TEST(TestCalc, testSumOverflow)
 {
-  CHECK_EQUAL(sum(5,4), 9);
+  CHECK_EQUAL(INT_MAX, sum(INT_MAX - 50, 100));
 }
 
-TEST(TestCalc, testProd)
+TEST(TestCalc, testSumUnderflow)
 {
-  CHECK_EQUAL(prod(5,4), 20);
+  CHECK_EQUAL(INT_MIN, sum(-10,INT_MIN));
+}
+
+TEST(TestCalc, testSumNoUnderflowOrOverflow){
+    CHECK_EQUAL(10, sum(6,4));
 }
